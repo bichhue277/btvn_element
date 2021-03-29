@@ -30,10 +30,6 @@ public class AppTest
         WebDriverManager.chromedriver().setup();
         this.driver = new ChromeDriver();
         this.driver.get("https://fado.vn/dang-nhap?redirect=https%3A%2F%2Ffado.vn%2F");
-
-        WebDriverManager.firefoxdriver().setup();
-        this.driver = new FirefoxDriver();
-        this.driver.get("https://fado.vn/dang-nhap?redirect=https%3A%2F%2Ffado.vn%2F");
     }
     @Test
     public void login_without_userName() throws InterruptedException {
